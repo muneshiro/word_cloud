@@ -2,7 +2,7 @@ import streamlit as st
 from wordcloud import WordCloud
 import MeCab
 
-st.title('日本語word cloud')
+st.title('品詞別に分類してWord Cloudを作成しよう！')
 
 text = st.text_area('ここに入力してください', value='', height=500, max_chars=None, key=None, help=None)
 
