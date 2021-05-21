@@ -13,8 +13,8 @@ word_class = st.multiselect('表示させる品詞の選択', ['名詞', '動詞
 color = st.radio("color",('white','black','red', 'gold', 'green', 'blue', 'orange', 'pink'))
 
 #width & height
-width = st.number_input('画像の幅', 640, 1920, 1280)
-height = st.number_input('画像の高さ', 480, 1080, 720)
+width = st.number_input('画像の幅(640~1920)', 640, 1920, 1280)
+height = st.number_input('画像の高さ(480~1080)', 480, 1080, 720)
 
 # ボタン
 button = st.button('Word Cloudの表示')
