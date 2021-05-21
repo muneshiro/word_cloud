@@ -18,7 +18,7 @@ color = st.radio("color",('white','black','red', 'gold', 'green', 'blue', 'orang
 #font_4 = {'バナナスリップplus': 'bananaslipplus.otf'}
 font = st.radio("font",('コーポレートロゴ','logotypejp_corpmin.ttf','Mamelon.otf','bananaslipplus.otf'))
 if font == 'コーポレートロゴ':
-    'コーポレートロゴ' = 'corp_round_v1.ttf'
+    font_path = 'corp_round_v1.ttf'
 
 
 
@@ -53,7 +53,7 @@ try:
         words = ' '.join(nouns)
 
         
-        wc = WordCloud(width=width, height=height, background_color=color, font_path=font)
+        wc = WordCloud(width=width, height=height, background_color=color, font_path=font_path)
         wc.generate(words)
         wc.to_file('wc.png')
         st.image('wc.png')
