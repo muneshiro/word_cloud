@@ -14,14 +14,10 @@ color = st.radio("color",('white','black','red', 'gold', 'green', 'blue', 'orang
 
 # フォント
 font = st.radio("font",('コーポレートロゴ','コーポレート明朝','マメロン','バナナスリップplus'))
-font_1 = 'コーポレートロゴ' 
-font_2 = 'コーポレート明朝'
-font_3 = 'マメロン'
-font_4 = 'バナナスリップplus'
-font_1 = 'corp_round_v1.ttf'
-font_2 = 'logotypejp_corpmin.ttf'
-font_3 = 'Mamelon.otf'
-font_4 = 'bananaslipplus.otf'
+font_1 = {'コーポレートロゴ': 'corp_round_v1.ttf'}
+font_2 = {'コーポレート明朝': 'logotypejp_corpmin.ttf'}
+font_3 = {'マメロン' : 'Mamelon.otf'}
+font_4 = {'バナナスリップplus': 'bananaslipplus.otf'}
 
 #width & height
 width = st.number_input('画像の幅(640~1920)', 640, 1920, 1280)
