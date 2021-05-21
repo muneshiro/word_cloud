@@ -5,7 +5,6 @@ import MeCab
 st.title('日本語word cloud')
 
 text = st.text_area('ここに入力してください', value='', height=500, max_chars=None, key=None, help=None)
-print(text)
 
 #品詞の選択
 word_class = st.multiselect('表示させる品詞の選択', ['名詞', '動詞', '形容詞', '副詞', '助詞', '助動詞'],'名詞')
