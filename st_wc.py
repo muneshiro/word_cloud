@@ -17,10 +17,8 @@ color = st.radio("color",('white','black','red', 'gold', 'green', 'blue', 'orang
 #font_3 = {'マメロン' : 'Mamelon.otf'}
 #font_4 = {'バナナスリップplus': 'bananaslipplus.otf'}
 font = st.radio("font",('コーポレートロゴ','logotypejp_corpmin.ttf','Mamelon.otf','bananaslipplus.otf'))
-if font = 'コーポレートロゴ':
-    font = 'corp_round_v1.ttf'
-elif font = 'コーポレート明朝':
-    font = 'logotypejp_corpmin.ttf'
+'コーポレートロゴ' == 'corp_round_v1.ttf'
+
 
 
 #width & height
