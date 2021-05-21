@@ -19,8 +19,11 @@ height = st.number_input('画像の高さ', 480, 1080, 720)
 # ボタン
 button = st.button('Word Cloudの表示')
 
-mecab = MeCab.Tagger()
-parts = mecab.parse(text)
+try:
+    mecab = MeCab.Tagger()    
+    parts = mecab.parse(text)
+except RuntimeError as e:
+    print(e)
 
 if button:
     nouns = []
