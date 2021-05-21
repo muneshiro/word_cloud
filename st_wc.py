@@ -1,7 +1,6 @@
 import streamlit as st 
 from wordcloud import WordCloud
 import MeCab
-import matplotlib.pyplot as plt
 
 st.title('日本語word cloud')
 
@@ -47,8 +46,3 @@ if button:
     wc.generate(words)
     wc.to_file('wc.png')
     st.image('wc.png')
-
-
-
-
-
