@@ -13,15 +13,15 @@ word_class = st.multiselect('表示させる品詞の選択', ['名詞', '動詞
 color = st.radio("color",('white','black','red', 'gold', 'green', 'blue', 'orange', 'pink'))
 
 # フォント
-#font_2 = {'コーポレート明朝': 'logotypejp_corpmin.ttf'}
-#font_3 = {'マメロン' : 'Mamelon.otf'}
-#font_4 = {'バナナスリップplus': 'bananaslipplus.otf'}
-font = st.radio("font",('コーポレートロゴ','logotypejp_corpmin.ttf','Mamelon.otf','bananaslipplus.otf'))
+font = st.radio("font",('コーポレートロゴ','コーポレート明朝','マメロン','バナナスリップplus'))
 if font == 'コーポレートロゴ':
     font_path = 'corp_round_v1.ttf'
-
-
-
+elif font == 'コーポレート明朝':
+    font_path = 'logotypejp_corpmin.ttf'
+elif font == 'マメロン':
+    font_path = 'Mamelon.otf'
+elif font == 'バナナスリップplus':
+    font_path = 'bananaslipplus.otf'
 
 #width & height
 width = st.number_input('画像の幅(640~1920)', 640, 1920, 1280)
@@ -52,7 +52,6 @@ try:
 
         words = ' '.join(nouns)
 
-        
         wc = WordCloud(width=width, height=height, background_color=color, font_path=font_path)
         wc.generate(words)
         wc.to_file('wc.png')
