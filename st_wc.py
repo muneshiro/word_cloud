@@ -48,8 +48,8 @@ try:
 
         words = ' '.join(nouns)
 
-        font_path = font
-        wc = WordCloud(width=width, height=height, background_color=color, font_path=font_path)
+        
+        wc = WordCloud(width=width, height=height, background_color=color, font_path=font)
         wc.generate(words)
         wc.to_file('wc.png')
         st.image('wc.png')
