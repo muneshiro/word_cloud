@@ -13,11 +13,11 @@ word_class = st.multiselect('表示させる品詞の選択', ['名詞', '動詞
 color = st.radio("color",('white','black','red', 'gold', 'green', 'blue', 'orange', 'pink'))
 
 # フォント
-font = st.radio("font",('コーポレートロゴ','コーポレート明朝','マメロン','バナナスリップplus'))
 font_1 = {'コーポレートロゴ': 'corp_round_v1.ttf'}
 font_2 = {'コーポレート明朝': 'logotypejp_corpmin.ttf'}
 font_3 = {'マメロン' : 'Mamelon.otf'}
 font_4 = {'バナナスリップplus': 'bananaslipplus.otf'}
+font = st.radio("font",('コーポレートロゴ','コーポレート明朝','マメロン','バナナスリップplus'))
 
 #width & height
 width = st.number_input('画像の幅(640~1920)', 640, 1920, 1280)
